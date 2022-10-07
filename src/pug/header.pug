@@ -1,0 +1,38 @@
+header.header
+  .container
+    .header__inner-flex
+      .header__logo-block
+        img(src=require("../img/logo.png") alt="Logo").header__logo-img
+        .header__logo-name
+          span.header__span Бизнес
+          span.header__span Практика
+      nav.header__navigation
+        ul.header__navigation-list
+          li.header__navigation-item
+            a(href="").header__navigation-link Консультации
+          li.header__navigation-item
+            a(href="").header__navigation-link Услуги
+          li.header__navigation-item
+            a(href="").header__navigation-link Треннинги
+          li.header__navigation-item
+            a(href="").header__navigation-link Блог
+      include mixins
+      +socialBlock('header__social-networks')
+      .header__menu-hidden
+        .header__btn-open-nav#open-nav-btn
+          i.fa.fa-bars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

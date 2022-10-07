@@ -1,0 +1,12 @@
+.social-networks {
+  &__ic {
+    margin-right: 18%;
+  }
+
+  &__path {
+    &:hover {
+      fill: $green;
+      cursor: pointer;
+    }
+  }
+}

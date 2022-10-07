@@ -1,0 +1,22 @@
+.overlay#hidden-nav
+	.overlay__close-btn-div
+		button.overlay__btn-icon#close-nav-btn
+			i.fa.fa-times
+	.overlay__content
+		img(src=require("../img/logo.png") alt="Logo").overlay__logo-img
+		.overlay__nav-block
+			ul.overlay__nav-list
+				li.overlay__nav-item
+					a.overlay__nav-link Консультации
+				li.overlay__nav-item
+					a.overlay__nav-link Услуги
+				li.overlay__nav-item
+					a.overlay__nav-link Треннинги
+				li.overlay__nav-item
+					a.overlay__nav-link Блог
+			include mixins
+			+socialBlock('overlay__social-networks')
+
+
+
+
