@@ -40,7 +40,13 @@
 
     &:hover {
       font-weight: 700;
+      cursor: pointer;
     }
+  }
+
+  &__nav-link {
+    color: inherit;
+    text-decoration: none;
   }
 
   &__logo-img {
@@ -59,9 +65,4 @@
       cursor: pointer;
     }
   }
-
-  //&__social-networks {
-  //  width: 30%;
-  //  margin: 0 auto;
-  //}
 }

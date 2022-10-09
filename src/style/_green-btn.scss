@@ -1,0 +1,25 @@
+.green-btn {
+  background-color: $green;
+  border: none;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  text-align: center;
+  border-radius: 9px;
+  letter-spacing: 1.2px;
+
+  &:hover {
+    background-color: $hoverGreen;
+    cursor: pointer;
+  }
+
+  @include l {
+    font-size: 14px;
+  }
+
+  @include m {
+    font-size: 16px;
+  }
+}

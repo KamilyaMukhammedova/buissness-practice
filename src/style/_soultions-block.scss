@@ -1,0 +1,286 @@
+.solutions-block {
+  padding: 18.3% 0 5.2% 0;
+  position: relative;
+
+  @include m {
+    padding: 16.3% 0 4.7% 0;
+
+  }
+
+  @include s {
+    padding: 88.3% 0 1.5% 0;
+  }
+
+  &__top-block {
+    padding-left: 32px;
+    margin-bottom: 21.5%;
+
+    @include l {
+      margin-bottom: 10.5%;
+    }
+
+    @include m {
+      padding-left: 55px;
+      margin-bottom: 11.5%;
+    }
+
+    @include s {
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 44px;
+    line-height: 53.64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+
+    @include l {
+      font-size: 28px;
+      line-height: 34.13px;
+    }
+  }
+
+  &__medium-title {
+    margin-top: 3px;
+    margin-bottom: 22px;
+
+    @include m {
+      margin-bottom: 10px;
+    }
+
+    @include s {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__arrows-img {
+    display: none;
+
+    @include s {
+      display: block;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 26.4px;
+    width: 40%;
+    margin-bottom: 30px;
+
+    @include l {
+      font-size: 19px;
+    }
+
+    @include m {
+      font-size: 14px;
+      line-height: 16.8px;
+      width: 42%;
+      margin-bottom: 12px;
+    }
+
+    @include s {
+      width: 100%;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__green-btn {
+    padding: 16px 28px 14px 28px;
+
+    @include s {
+      margin-bottom: 57px;
+    }
+  }
+
+  &__lines-img-div {
+    position: absolute;
+    width: 66%;
+    top: 8%;
+    left: 8.7%;
+    z-index: -1;
+
+    @include xl {
+     opacity: 0.3;
+    }
+
+    @include m {
+      display: none;
+    }
+  }
+
+  &__figure1-div {
+    position: absolute;
+    width: 12%;
+    top: 11%;
+    left: 0;
+    z-index: -2;
+
+    @include m {
+      top: 4%;
+      width: 19%;
+      left: 4%;
+    }
+
+    @include s {
+      display: none;
+    }
+  }
+
+  &__figure2-div {
+    position: absolute;
+    width: 8.5%;
+    bottom: 4%;
+    left: 6px;
+    z-index: -2;
+
+    @include m {
+      bottom: 3%;
+      width: 13.5%;
+      left: 3%;
+    }
+
+    @include s {
+      display: none;
+    }
+  }
+
+  &__cube-img-div {
+    position: absolute;
+    width: 40%;
+    top: 9%;
+    left: 60%;
+
+    @include l {
+      top: 13%;
+    }
+
+    @include m {
+      top: 7%;
+      width: 35%;
+      left: 61%;
+      z-index: -2;
+      opacity: 0.7;
+    }
+
+    @include s {
+      top: 6%;
+      width: 69%;
+      left: 15%;
+    }
+  }
+
+  &__lines-img,
+  &__figure1-img,
+  &__figure2-img,
+  &__cube-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__cube-ic-div {
+    width: 20%;
+    padding-left: 9.1%;
+
+    @include m {
+      width: 30%;
+      padding-left: 19%;
+    }
+
+    @include s {
+      width: 17%;
+      padding-left: 0;
+      text-align: right;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    padding: 0 2% 0 5%;
+    margin-bottom: 42px;
+
+    @include m {
+      margin-bottom: 26px;
+      padding: 0;
+      width: 44%;
+    }
+
+    @include s {
+      width: 100%;
+    }
+  }
+
+  &__box2 {
+    @include m {
+      width: 53%;
+    }
+
+    @include s {
+      width: 100%;
+    }
+  }
+
+  &__box-text {
+    width: 80%;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding: 3% 16% 0 9%;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: $hoverBlue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @include l {
+      padding: 3% 3% 0 5%;
+      margin-bottom: 3px;
+      font-size: 16px;
+    }
+
+    @include m {
+      padding: 3% 3% 0 9%;
+      margin-bottom: 3px;
+      width: 70%;
+    }
+
+    @include s {
+      width: 80%;
+      padding: 3% 3% 0 7%;
+      font-size: 18px;
+    }
+  }
+
+  &__inner-flex {
+    margin-bottom: 8.5%;
+
+    @include m {
+      margin-bottom: 10.5%;
+    }
+
+    @include s {
+      display: block;
+      margin-bottom: 96px;
+    }
+  }
+
+  &__services {
+    padding-left: 56px;
+
+    @include m {
+      font-size: 30px !important;
+      line-height: 36.57px !important;
+    }
+
+    @include s {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
