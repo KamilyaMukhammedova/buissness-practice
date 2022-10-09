@@ -1,0 +1,51 @@
+.footer {
+  background-color: #3F4750;
+  color: #9FA7B0;
+  padding: 22px 0 24px;
+
+  @include m {
+    padding: 21px 0 24px;
+  }
+
+  @include s {
+    padding: 29px 0 24px 15px;
+  }
+
+  &__inner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include s {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 16.8px;
+    letter-spacing: 1px;
+  }
+
+  &__social-networks svg path {
+    fill: #9FA7B0;
+  }
+
+  &__social-networks {
+    text-align: right;
+  }
+
+  &__social-networks svg {
+    margin-right: 15px;
+
+    @include s {
+      margin-right: 30px;
+    }
+  }
+
+  &__box2 {
+    @include s {
+      margin-bottom: 20px;
+    }
+  }
+}
