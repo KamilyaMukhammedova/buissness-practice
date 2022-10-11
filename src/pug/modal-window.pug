@@ -1,0 +1,21 @@
+.modal-window#modal-window
+	.modal-window__content
+		.modal-window__close-btn-div
+			button.modal-window__btn-icon#close-modal-btn
+				i.fa.fa-times
+		.modal-window__title Оставьте заявку
+		form.modal-window__form#form
+			.modal-window__field-block
+				input(type="text", placeholder="Ваше имя", id="user-name").modal-window__input
+				span.modal-window__required-error#user-name-req
+			.modal-window__field-block
+				input(type="email", placeholder="Email", id="user-email").modal-window__input
+				span.modal-window__required-error#user-email-req
+			.modal-window__field-block
+				textarea(placeholder="Пожалуйста опишите вашу проблему", id="user-problem").modal-window__input.modal-window__textarea
+				span.modal-window__required-error#user-problem-req
+			button(type="submit").green-btn.modal-window__green-btn#submit-btn Отправить
+
+
+
+

@@ -7,7 +7,7 @@ block content
 				h1.solutions-block__title Создаем решения
 				h3.medium-title.solutions-block__medium-title Для роста бизнеса
 				p.solutions-block__text На основе анализа данных с алгоритмами реализации
-				button.green-btn.solutions-block__green-btn Обсудить проблему
+				button.green-btn.solutions-block__green-btn#open-modal-btn-main Обсудить проблему
 				.solutions-block__arrows-img
 					img(src=require("../img/main-page/arrows.png") alt="Arrows")
 			.solutions-block__cube-img-div
@@ -67,6 +67,7 @@ block content
 					.services__icon-div4
 						img(src=require("../img/main-page/service-ic4.png") alt="Icon 4").services__ic
 					p.services__text4 Запускаем новый проект: start-up маркетинг
+	include modal-window
 
 
 
