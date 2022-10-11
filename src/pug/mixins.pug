@@ -70,8 +70,9 @@ mixin trainingCard(dataArray)
                div.training-block__text #{value.text1}
                div.training-block__text #{value.text2}
                button.green-btn.green-btn_blue.training-block__blue-btn
-                  span.training-block__btn-span Подробнее
-                  img(src=require("../img/trainings-page/vector.png") alt="Vector icon").training-block__btn-icon
+                  a(href="one-training-page.html")
+                     span.training-block__btn-span Подробнее
+                     img(src=require("../img/trainings-page/vector.png") alt="Vector icon").training-block__btn-icon
             +cubeList(value.list)(class='training-block__list')
 
 

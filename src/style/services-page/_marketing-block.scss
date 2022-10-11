@@ -66,7 +66,10 @@
    color: $hoverBlue;
   }
 
-  &__figure1-div, &__cube-div {
+  &__figure1-div,
+  &__cube-div,
+  &__figure1-div-training,
+  &__cube-div-training {
     position: absolute;
     z-index: -1;
   }
@@ -88,4 +91,15 @@
     height: auto;
   }
 
+  &__figure1-div-training {
+    top: 4%;
+    left: 7.7%;
+    width: 6.7%;
+  }
+
+  &__cube-div-training  {
+    top: 2%;
+    right: 0;
+    width: 44%;
+  }
 }

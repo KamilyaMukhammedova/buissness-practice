@@ -1,0 +1,143 @@
+.one-training-block {
+  padding-bottom: 0;
+  margin-bottom: -1%;
+  position: relative;
+
+  @include s {
+    font-size: 16px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include l {
+      font-size: 35px;
+    }
+
+    @include s {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__cube-list {
+    margin: 26px 0 54px;
+  }
+
+  &__green-btn {
+    margin: 0 0 14% 42px;
+    padding: 13px 25px 13px 88px;
+
+    @include l {
+      margin-left: 0;
+      margin-bottom: 30px;
+      padding: 13px 25px;
+    }
+
+    @include s {
+      font-size: 12px;
+    }
+  }
+
+  &__btn-span {
+    margin-right: 40px;
+  }
+
+  &__medium-title {
+    text-transform: initial;
+    margin-bottom: 44px;
+  }
+
+  &__small-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24.38px;
+    margin-bottom: 26px;
+
+    @include s {
+      font-size: 20px;
+    }
+  }
+
+  &__round-list {
+    margin-bottom: 41px;
+    font-size: 17px;
+    line-height: 20.4px;
+
+    @include m {
+      font-size: 16px;
+    }
+
+    @include s {
+      font-size: 15px;
+    }
+  }
+
+  &__round-list2 {
+    margin-bottom: 22px;
+  }
+
+  &__round-list img {
+    margin-right: 13px;
+  }
+
+  &__round-list li {
+    margin-bottom: 17px;
+  }
+
+  &__exemple-text {
+    padding-left: 43px;
+    margin-bottom: 40px;
+
+    @include m {
+      padding-left: 0;
+    }
+  }
+
+  &__bonus-text {
+    padding-left: 43px;
+
+    @include m {
+      padding-left: 0;
+    }
+  }
+
+  &__small-title-advantages {
+    margin-top: 44px;
+  }
+
+  &__line-div,
+  &__cubes-div {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__line-img,
+  &__cubes-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__cubes-div {
+    bottom: 29.4%;
+    right: 0;
+    width: 13.7%;
+
+    @include s {
+      display: none;
+    }
+  }
+
+  &__line-div {
+    bottom: -3.8%;
+    right: 14%;
+    width: 37.7%;
+
+    @include l {
+      display: none;
+    }
+  }
+}

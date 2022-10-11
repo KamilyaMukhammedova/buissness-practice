@@ -10,10 +10,13 @@
 
   &__item {
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
   }
 
   &__icon {
     margin-right: 38px;
+    display: block;
 
     @include m {
       margin-right: 20px;
