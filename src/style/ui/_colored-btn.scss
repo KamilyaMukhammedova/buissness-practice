@@ -22,4 +22,12 @@
   @include m {
     font-size: 16px;
   }
+
+  &_blue {
+    background-color: $btnBlue;
+
+    &:hover {
+      background-color: #287EE7;
+    }
+  }
 }

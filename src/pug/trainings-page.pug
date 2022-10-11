@@ -1,0 +1,41 @@
+extends page-template
+
+block content
+	include mixins
+	-
+		const trainingsData =
+						[{title: 'Бизнес-тренинг «Маркетинг – технология роста»',
+							text1: 'Для кого: руководители компаний, маркетологи, продавцы',
+							text2: 'Цели бизнес-тренинга:',
+							list: ['Определение маркетинга как технологии роста', 'Организация маркетинга как сквозного ' +
+							'бизнес-процесса', 'Получение практических навыков применения технологии маркетинга']},
+							{title: 'Тренинг с длинным названием в 3 текстовой строчки',
+								text1: 'Для кого: руководители компаний, маркетологи, продавцы',
+								text2: 'Цели бизнес-тренинга:',
+								list: ['Определение маркетинга как технологии роста',
+									'Организация маркетинга как сквозного бизнес-процесса',
+									'Получение практических навыков применения технологии маркетинга',
+									'Получение практических навыков применения технологии маркетинга']},
+							{title: 'Короткое название',
+								text1: 'Для кого: руководители компаний, маркетологи, продавцы',
+								text2: 'Цели бизнес-тренинга:',
+								list: ['Определение маркетинга как технологии роста',
+									'Организация маркетинга как сквозного бизнес-процесса',
+									'Получение практических навыков применения технологии маркетинга']}];
+
+	.marketing-block
+		.container
+			nav.extra-nav.training-block__extra-nav
+				ul.extra-nav__list
+					li.extra-nav__item.extra-nav_grey-text
+						a(href="#").extra-nav__link
+						span.extra-nav__text Главная
+					li.extra-nav__item
+						a(href="#").extra-nav__link
+						span.extra-nav__divider /
+						span.extra-nav__text  Тренинги
+			+trainingCard(trainingsData)
+			.marketing-block__figure1-div
+				img(src=require("../img/services-page/marketing-img1.png") alt="Figure image").marketing-block__figure1-img
+			.marketing-block__cube-div
+				img(src=require("../img/services-page/marketing-cubes.png") alt="Cubes image").marketing-block__cubes-img

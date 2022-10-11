@@ -47,8 +47,8 @@ mixin socialBlock(className)
             "8.00376 17.5664 7.84529 17.5425 7.689C17.5284 7.56288 17.4673 7.44669 17.3715 7.3635C17.235 7.26928 17.0723 " +
             "7.22047 16.9065 7.224C16.4565 7.2315 15.762 7.473 12.4305 8.859Z" fill="#282C37").social-networks__path
 
-mixin cubeList(arrayName)
-   ul.list
+mixin cubeList(arrayName, extraClass)
+   ul.list(class=attributes.class)
       each value in arrayName
          li.list__item
             img(src=require("../img/services-page/cube-list-ic.png") alt="Cube icon").list__icon
@@ -60,6 +60,24 @@ mixin roundList(arrayName, extraClass)
          li.list__item
             img(src=require("../img/services-page/round-list-ic.png") alt="Round icon").list__icon
             span.list__text #{value}
+
+mixin trainingCard(dataArray)
+   .training-block
+      each value in dataArray
+         .training-block__card
+            .training-block__box1
+               h3.medium-title.training-block__medium-title #{value.title}
+               div.training-block__text #{value.text1}
+               div.training-block__text #{value.text2}
+               button.green-btn.green-btn_blue.training-block__blue-btn
+                  span.training-block__btn-span Подробнее
+                  img(src=require("../img/trainings-page/vector.png") alt="Vector icon").training-block__btn-icon
+            +cubeList(value.list)(class='training-block__list')
+
+
+
+
+
 
 
 

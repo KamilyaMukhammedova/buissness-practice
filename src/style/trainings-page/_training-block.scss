@@ -1,0 +1,100 @@
+.training-block {
+  padding-bottom: 0.3%;
+
+  @include l {
+    font-size: 17px;
+  }
+
+  @include s {
+    font-size: 16px;
+  }
+
+  &__card {
+    box-shadow: 0 0 25px 0 #646363;
+    border: 1px solid $lightGrey;
+    display: flex;
+    padding: 37px 40px 36px 38px;
+    margin-bottom: 41px;
+    background-color: $white;
+    border-radius: 20px;
+
+    @include m {
+      display: block;
+    }
+
+    @include s {
+      padding: 20px;
+    }
+  }
+
+  &__medium-title {
+    text-transform: initial;
+    margin-bottom: 33px;
+  }
+
+  &__extra-nav {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__box1 {
+    width: 50%;
+
+    @include m {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    width: 50%;
+    padding: 15px 3% 0 1%;
+
+    @include l {
+      font-size: 17px;
+    }
+
+    @include m {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    @include s {
+      font-size: 16px;
+    }
+  }
+
+  &__list li {
+    display: flex;
+    margin-bottom: 14px;
+    align-items: center;
+  }
+
+  &__list img {
+    display: block;
+  }
+
+  &__blue-btn {
+    margin-top: 26px;
+    padding: 14px 24px 14px 20px;
+
+    @include m {
+      padding: 11px 24px 11px 20px;
+    }
+  }
+
+  &__btn-span {
+    margin-right: 50px;
+  }
+
+  &__medium-title {
+    padding-right: 7%;
+
+    @include l {
+      line-height: 28px;
+    }
+  }
+
+}
