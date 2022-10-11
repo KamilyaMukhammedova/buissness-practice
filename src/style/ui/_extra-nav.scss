@@ -1,0 +1,49 @@
+.extra-nav {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16.41px;
+
+  @include l {
+    padding-left: 15px;
+  }
+
+  @include s {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  &__list {
+    padding-left: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+      color: $hoverBlue;
+    }
+
+    @include m {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  &_grey-text {
+    color: #9FA7B0;
+  }
+
+  &__text {
+    margin-right: 20px;
+  }
+
+  &__divider {
+    margin-right: 11px;
+
+    @include m {
+      display: none;
+    }
+  }
+
+}

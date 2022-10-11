@@ -52,10 +52,10 @@
     }
   }
 
-  &__navigation-list {
-    list-style: none;
-    margin: 0;
-  }
+  //&__navigation-list {
+  //  list-style: none;
+  //  margin: 0;
+  //}
 
   &__navigation-item {
     display: inline-block;
@@ -73,8 +73,8 @@
   }
 
   &__navigation-link {
-    text-decoration: none;
-    color: inherit;
+    //text-decoration: none;
+    //color: inherit;
 
     &:active {
       font-weight: 700;

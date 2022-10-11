@@ -1,0 +1,107 @@
+.form-block {
+  padding: 7.2% 0 6.8% 0;
+  position: relative;
+  height: 546px;
+
+  @include s {
+    height: 500px;
+  }
+
+  &__form {
+    width: 44.8%;
+    margin: 0 auto;
+    box-shadow: 0 0 25px 0 #000000;
+    border: 1px solid $lightGrey;
+    border-radius: 20px;
+    padding: 5.2% 0 5% 0;
+    text-align: center;
+    position: absolute;
+    top: 19%;
+    left: 27.8%;
+    z-index: 5;
+    background-color: $white;
+
+    @include l {
+      width: 30rem;
+      left: calc(50% - 15rem);
+    }
+
+    @include m {
+      width: 25rem;
+      left: calc(50% - 12.5rem);
+    }
+
+    @include s {
+      width: 15rem;
+      left: calc(50% - 7.5rem);
+    }
+  }
+
+
+  &__field-block {
+    width: 82%;
+    margin: 0 auto 25px;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $formGrey;
+    height: 50px;
+    padding: 0 2% 0 3%;
+    text-align: left;
+    font-weight: 400 !important;
+
+    &::placeholder {
+      color: $formGrey;
+      font-style: italic;
+    }
+
+    @include l {
+      font-size: 15px;
+    }
+
+    @include s {
+      font-size: 13px;
+    }
+  }
+
+  &__green-btn {
+    width: 82%;
+    padding: 13px 15px;
+
+    @include s {
+      font-size: 12px;
+      padding: 11px 2px;
+    }
+  }
+
+  &__figure1-div,
+  &__figure2-div,
+  &__figure3-div {
+    position: absolute;
+  }
+
+  &__figure-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__figure1-div {
+    width: 12%;
+    top: 7%;
+    left: 20%;
+  }
+
+  &__figure2-div {
+    width: 8.5%;
+    top: 45%;
+    left: 12.2%;
+  }
+
+  &__figure3-div {
+    width: 15.3%;
+    bottom: 11%;
+    right: 14.5%;
+  }
+}

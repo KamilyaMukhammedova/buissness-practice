@@ -1,0 +1,91 @@
+.marketing-block {
+  padding: 5.1% 0 3% 0;
+  position: relative;
+
+  @include l {
+    padding-left: 15px;
+  }
+
+  @include s {
+    text-align: center;
+    padding-left: 0;
+  }
+
+
+  &__extra-nav {
+    margin-bottom: 43px;
+  }
+
+  &__title {
+    font: 700 44px "Montserrat", sans-serif;
+    margin-bottom: 34px;
+
+    @include l {
+      font-size: 38px;
+    }
+
+    @include s {
+      font-size: 23px;
+    }
+  }
+
+  &__medium-title {
+    text-transform: initial;
+    margin-top: 66px;
+    margin-bottom: 37px;
+  }
+
+  &__text {
+    padding-left: 20px;
+    margin-bottom: 24px;
+
+    @include l {
+      font-size: 17px;
+      padding-left: 0;
+    }
+
+    @include s {
+      font-size: 15px;
+    }
+  }
+
+  &__round-list {
+    padding-left: 6.6% !important;
+    margin-top: 34px;
+  }
+
+  &__round-list li {
+    margin-bottom: 17px !important;
+  }
+
+  &__round-list img {
+    margin-right: 19px !important;
+  }
+
+  &__blue-text {
+   color: $hoverBlue;
+  }
+
+  &__figure1-div, &__cube-div {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__figure1-div {
+    top: 9%;
+    left: 7.7%;
+    width: 6.7%;
+  }
+
+  &__cube-div {
+    top: 5%;
+    right: 0;
+    width: 44%;
+  }
+
+  &__cubes-img, &__figure1-img {
+    width: 100%;
+    height: auto;
+  }
+
+}

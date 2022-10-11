@@ -47,5 +47,22 @@ mixin socialBlock(className)
             "8.00376 17.5664 7.84529 17.5425 7.689C17.5284 7.56288 17.4673 7.44669 17.3715 7.3635C17.235 7.26928 17.0723 " +
             "7.22047 16.9065 7.224C16.4565 7.2315 15.762 7.473 12.4305 8.859Z" fill="#282C37").social-networks__path
 
+mixin cubeList(arrayName)
+   ul.list
+      each value in arrayName
+         li.list__item
+            img(src=require("../img/services-page/cube-list-ic.png") alt="Cube icon").list__icon
+            span.list__text #{value}
+
+mixin roundList(arrayName, extraClass)
+   ul.list(class=attributes.class)
+      each value in arrayName
+         li.list__item
+            img(src=require("../img/services-page/round-list-ic.png") alt="Round icon").list__icon
+            span.list__text #{value}
+
+
+
+
 
 

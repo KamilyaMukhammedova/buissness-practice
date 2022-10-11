@@ -1,0 +1,22 @@
+.list {
+  padding-left: 3.8%;
+  font: 400 17px "Roboto", sans-serif;
+  line-height: 19.92px;
+
+  @include s {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+  }
+
+  &__icon {
+    margin-right: 38px;
+
+    @include m {
+      margin-right: 20px;
+    }
+  }
+}

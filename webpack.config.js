@@ -34,6 +34,10 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'pug', 'main.pug'),
       filename: "index.html",
     }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'pug', 'services-page.pug'),
+      filename: "services-page.html",
+    }),
     new MiniCssExtractPlugin({
       filename: 'index.[contenthash].css'
     }),
