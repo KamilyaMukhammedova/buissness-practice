@@ -86,19 +86,19 @@ const onUserProblemListener = (eventName) => {
   }
 };
 
-if (closeBtn) {
-  closeBtn.addEventListener('click', () => {
-    modalWindow.style.display = 'none';
-    clearFields();
-  });
-}
-
 window.addEventListener('click', (event) => {
   if (event.target === modalWindow) {
     modalWindow.style.display = 'none';
     clearFields();
   }
 });
+
+if (closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    modalWindow.style.display = 'none';
+    clearFields();
+  });
+}
 
 if (openBtnMain) {
   openBtnMain.addEventListener('click', () => {

@@ -4,7 +4,7 @@
   color: $white;
 
   @include m {
-    padding: 0 1% 0;
+    padding: 0 1%;
     margin-bottom: 5.7%;
   }
 
@@ -38,6 +38,7 @@
 
     @include s {
       margin-bottom: 15px;
+      display: block;
     }
   }
 
@@ -68,16 +69,16 @@
 
   &__card1 {
     width: 32.43%;
-    padding: 14% 0 0 0;
+    padding-top: 14%;
 
     @include m {
       width: 47%;
-      padding: 7% 0 0 0;
+      padding-top: 7%;
     }
 
     @include s {
       width: 100%;
-      padding: 14% 0 0 0;
+      padding-top: 14%;
     }
   }
 
@@ -85,47 +86,47 @@
     width: 100%;
     display: flex;
     margin-bottom: 15px;
-    padding: 5% 0 5.3% 0;
+    padding: 5% 0 5.3%;
     align-items: center;
 
     @include m {
       width: 47%;
-      padding: 7% 0 0 0;
+      padding-top: 7%;
     }
 
     @include s {
       width: 100%;
-      padding: 13% 0 0 0;
+      padding-top: 13%;
     }
   }
 
   &__card3 {
     width: 49%;
-    padding: 10% 0 8.3% 0;
+    padding: 10% 0 8.3%;
 
     @include m {
       width: 47%;
-      padding: 7% 0 3% 0;
+      padding: 7% 0 3%;
     }
 
     @include s {
       width: 100%;
-      padding: 15% 0 3% 0;
+      padding: 15% 0 3%;
     }
   }
 
   &__card4 {
     width: 49%;
-    padding: 12% 0 8.3% 0;
+    padding: 12% 0 8.3%;
 
     @include m {
       width: 47%;
-      padding: 8% 0 3% 0;
+      padding: 8% 0 3%;
     }
 
     @include s {
       width: 100%;
-      padding: 16% 0 3% 0;
+      padding: 16% 0 3%;
     }
   }
 

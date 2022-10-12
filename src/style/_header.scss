@@ -52,11 +52,6 @@
     }
   }
 
-  //&__navigation-list {
-  //  list-style: none;
-  //  margin: 0;
-  //}
-
   &__navigation-item {
     display: inline-block;
     font-size: 14px;
@@ -73,11 +68,13 @@
   }
 
   &__navigation-link {
-    //text-decoration: none;
-    //color: inherit;
-
     &:active {
       font-weight: 700;
+    }
+
+    &:hover {
+      font-weight: 700;
+      cursor: pointer;
     }
   }
 

@@ -1,14 +1,13 @@
 .solutions-block {
-  padding: 18.3% 0 5.2% 0;
+  padding: 18.3% 0 5.2%;
   position: relative;
 
   @include m {
-    padding: 16.3% 0 4.7% 0;
-
+    padding: 16.3% 0 4.7%;
   }
 
   @include s {
-    padding: 88.3% 0 1.5% 0;
+    padding: 88.3% 0 1.5%;
   }
 
   &__top-block {
@@ -90,7 +89,7 @@
   }
 
   &__green-btn {
-    padding: 16px 28px 14px 28px;
+    padding: 16px 28px 14px;
 
     @include s {
       margin-bottom: 57px;
@@ -105,47 +104,80 @@
     z-index: -1;
 
     @include xl {
-     opacity: 0.3;
+      opacity: 0.5;
     }
 
+    @include l {
+      display: none;
+    }
+  }
+
+  &__line1-div,
+  &__line2-div,
+  &__line3-div {
+    display: none;
+
     @include m {
+      display: block;
+      position: absolute;
+      z-index: -5;
+      opacity: 0.7;
+    }
+
+    @include s {
+      display: none;
+    }
+  }
+
+  &__line1-div {
+    width: 51%;
+    top: 5%;
+    right: 24%;
+  }
+
+  &__line2-div {
+    width: 48%;
+    top: 43%;
+    right: 28%;
+  }
+
+  &__line3-div {
+    width: 63%;
+    bottom: 7%;
+    right: 25%;
+  }
+
+  &__figure1-div,
+  &__figure2-div {
+    position: absolute;
+    z-index: -2;
+
+    @include s {
       display: none;
     }
   }
 
   &__figure1-div {
-    position: absolute;
     width: 12%;
     top: 11%;
     left: 0;
-    z-index: -2;
 
     @include m {
       top: 4%;
       width: 19%;
       left: 4%;
     }
-
-    @include s {
-      display: none;
-    }
   }
 
   &__figure2-div {
-    position: absolute;
     width: 8.5%;
     bottom: 4%;
     left: 6px;
-    z-index: -2;
 
     @include m {
       bottom: 3%;
       width: 13.5%;
       left: 3%;
-    }
-
-    @include s {
-      display: none;
     }
   }
 
@@ -164,13 +196,13 @@
       width: 35%;
       left: 61%;
       z-index: -2;
-      opacity: 0.7;
     }
 
     @include s {
       top: 6%;
       width: 69%;
       left: 15%;
+      opacity: 0.7;
     }
   }
 
