@@ -10,6 +10,14 @@
   overflow-x: hidden;
   transition: 0.5s;
 
+  //@include xl {
+  //  width: 0;
+  //}
+  //
+  //@include m {
+  //  width: 100%;
+  //}
+
   &__content {
     position: relative;
     top: 11%;
