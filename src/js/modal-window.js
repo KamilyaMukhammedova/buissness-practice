@@ -9,6 +9,9 @@ const errorReqEmail = document.getElementById('user-email-req');
 const errorReqProblem = document.getElementById('user-problem-req');
 const submitBtn = document.getElementById('submit-btn');
 const form = document.getElementById('form');
+const sendText = document.getElementById('send');
+const sendingText = document.getElementById('sending');
+const successText = document.getElementById('success-text');
 const errorText = 'поле обязательно*';
 const redColor = '#CF4747';
 const blackColor = '#282C37';
@@ -24,10 +27,13 @@ export const clearFields = () => {
   userName.style.borderColor = blackColor;
   userEmail.style.borderColor = blackColor;
   userProblem.style.borderColor = blackColor;
+  successText.innerText = '';
+  sendText.style.display = 'inline';
+  sendingText.style.display = 'none';
 };
 
 const onUserNameListener = (eventName) => {
-  if(userName) {
+  if (userName) {
     userName.addEventListener(eventName, (event) => {
       if (event.target.value === '') {
         errorReqName.innerText = errorText;
@@ -45,7 +51,7 @@ const onUserNameListener = (eventName) => {
 };
 
 const onUserEmailListener = (eventName) => {
-  if(userEmail) {
+  if (userEmail) {
     userEmail.addEventListener(eventName, (event) => {
       if (event.target.value === '') {
         errorReqEmail.innerText = errorText;
@@ -63,7 +69,7 @@ const onUserEmailListener = (eventName) => {
 };
 
 const onUserProblemListener = (eventName) => {
-  if(userProblem) {
+  if (userProblem) {
     userProblem.addEventListener(eventName, (event) => {
       if (event.target.value === '') {
         errorReqProblem.innerText = errorText;
@@ -80,7 +86,7 @@ const onUserProblemListener = (eventName) => {
   }
 };
 
-if(closeBtn) {
+if (closeBtn) {
   closeBtn.addEventListener('click', () => {
     modalWindow.style.display = 'none';
     clearFields();
@@ -94,9 +100,29 @@ window.addEventListener('click', (event) => {
   }
 });
 
-if(openBtnMain) {
+if (openBtnMain) {
   openBtnMain.addEventListener('click', () => {
     modalWindow.style.display = 'block';
+  });
+}
+
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    submitBtn.classList.add('modal-window__btn-disabled');
+    sendText.style.display = 'none';
+    sendingText.style.display = 'inline';
+
+    setTimeout(() => {
+      userName.value = '';
+      userEmail.value = '';
+      userProblem.value = '';
+      successText.innerText = 'Ваша заявка успешно отправлена!';
+      submitBtn.classList.remove('modal-window__btn-disabled');
+      sendText.style.display = 'inline';
+      sendingText.style.display = 'none';
+      submitBtn.disabled = true;
+    }, 2000);
   });
 }
 

@@ -14,7 +14,10 @@
 			.modal-window__field-block
 				textarea(placeholder="Пожалуйста опишите вашу проблему", id="user-problem").modal-window__input.modal-window__textarea
 				span.modal-window__required-error#user-problem-req
-			button(type="submit").green-btn.modal-window__green-btn#submit-btn Отправить
+			button(type="submit", disabled).green-btn.modal-window__green-btn#submit-btn
+				span.modal-window__send-text#send Отправить
+				span.modal-window__sending#sending идет отправка...
+			p.modal-window__success-text#success-text
 
 
 

@@ -109,6 +109,7 @@
   &__green-btn {
     padding: 16px 28px 14px 28px;
     width: 85%;
+    pointer-events: initial;
 
     &:disabled {
       pointer-events: none;
@@ -123,5 +124,22 @@
   &__required-error {
     color: $red;
     font-size: 14px;
+  }
+
+  &__sending {
+    display: none;
+  }
+
+  &__btn-disabled {
+    pointer-events: none;
+    background-color: #9FA7B0;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__success-text {
+    color: $hoverGreen;
+    font-weight: 700;
+    margin-top: 30px;
   }
 }
